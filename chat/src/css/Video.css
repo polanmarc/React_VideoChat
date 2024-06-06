@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+#video-content,
+#canvas-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#video-content video,
+#canvas-content canvas {
+    width: 80%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#canvas-content canvas {
+    display: none;
+}
+
+#controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#controls button {
+    margin: 0 10px 25px 0;
+    width: 150px;
+}
+
+label {
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}
+
+.none {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.blur {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.invert {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.sepia {
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
+
+#content-receiver {
+    color: #333;
+}
+
+button#snapshot {
+    margin: 0 10px 25px 0;
+    width: 110px;
+}
+
+#filter-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+video {
+    object-fit: cover;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+#printearMensajes {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mensage-texto {
+    width: 70%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.botones-mensaje {
+    width: 29%;
+}
+
+.content-mensaje {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#printearMensajes div:last-child {
+    border-bottom: none;
+}
+
+#printearMensajes p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#printearMensajes button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 1em;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}
+
+#mensaje-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+button#editMessage,
+button#deleteMessage {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+button#editMessage:hover,
+button#deleteMessage:hover {
+    background-color: #d4d4d4;
+}
+
+button#editMessage:focus,
+button#deleteMessage:focus {
+    outline: none;
+    border-color: #646cff;
+}
